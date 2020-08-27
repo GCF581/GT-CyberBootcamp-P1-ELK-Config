@@ -32,7 +32,14 @@ By using Beats the ELK server is able to collect logs data and metrics of the 2 
 * Metricbeat is used to collect and send to ELK server the statistics and metrics of the operating system, container performance, and services running on the machines. 
 
 ### Machines Configuration
-Following table displays the general configuration of each machine.
+Following table displays the general configuration of each machine.  (For safety reasons Public IP'S are not complete displayed)
+
+| Name           | Function             |      IP Address    | Operating System |                             General Notes                                     |
+|--------------- |----------------------|--------------------|------------------|-------------------------------------------------------------------------------|
+| Jump Box       | Gateway              | 52.188.XXX.XXX     | Linux            |It contains the connection to docker and deploy containers                     |
+| WEB1           | Internal PC          | 10.0.0.4           | Linux            |Internal PC used as container, it sends logs and syst performance to ELK       |
+| WEB2           | Internal PC          | 10.0.0.5           | Linux            |Internal PC used as container, it sends logs and syst performance to ELK       |
+| ELK Server     | Elasticsearh config  | 10.1.0.4           | Linux            |                                                                               |
 
 Following pictures display the configuration of each machine on the lab
 Jump Box
