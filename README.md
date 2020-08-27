@@ -5,6 +5,7 @@ Internal PC's and servers were set up as containers, so this project explains as
 
 ## Project contents
 * Network diagram and topology Description
+* Machines Configuration
 * Access Policies
 * Use of Playbooks and containers development
 * ELK Configuration
@@ -24,6 +25,17 @@ Docker is used to create the environment to run different applications. In this 
 
 By using the jump box as the main repository, it helps to develop a system with fewer hardware resources, since there is no necessity to generate more virtual machines which consume system and memory performance on the hosts/clouds, instead, the deployment of the environment and applications is done as containers.
 
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network, containers, and system performance.
+By using Beats the ELK server is able to collect logs data and metrics of the 2 web-pcs. 
+* Filebeat is used to send in a light form all the logs gathered from the Internal PC's. In this way, the system resources used are reduced  than if we were  using logstash
+  directly on each machine 
+* Metricbeat is used to collect and send to ELK server the statistics and metrics of the operating system, container performance, and services running on the machines. 
+
+### Machines Configuration
+Following table displays the general configuration of each machine.
+
+Following pictures display the configuration of each machine on the lab
+Jump Box
 
 
 
