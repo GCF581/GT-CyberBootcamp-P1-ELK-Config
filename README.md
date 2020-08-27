@@ -45,5 +45,3 @@ Following pictures display the configuration of each machine on the lab
 Jump Box
 
 
-
-
