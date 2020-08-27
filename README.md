@@ -39,8 +39,7 @@ Following table displays the general configuration of each machine.  (For safety
 | Jump Box       | Gateway              | 52.188.XXX.XXX             | Linux            |It contains the connection to docker and deploy containers                     |
 | WEB1           | Internal PC          | 10.0.0.4                   | Linux            |Internal PC used as container, it sends logs and syst performance to ELK       |
 | WEB2           | Internal PC          | 10.0.0.5                   | Linux            |Internal PC used as container, it sends logs and syst performance to ELK       |
-| ELK Server     | ELK Information collector  | 10.1.0.4 / 52.252.XXX.XXX  | Linux      |External IP is used to enter to Kibana to set up Lifebeat and metricbeat and 
-                                                                                         monitor results                                                                        |
+| ELK Server     | ELK Information collector  | 10.1.0.4 / 52.252.XXX.XXX  | Linux      |External IP is used to enter to Kibana to set up Lifebeat and metricbeat and monitor results                                                                                                                                                                 |
 
 Following pictures display the configuration of each machine on the lab
 Jump Box
