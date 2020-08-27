@@ -15,7 +15,7 @@ Internal PC's and servers were set up as containers, so this project explains as
 
 ![GT_CyberP1_RedTeam_Network_Diagram](https://user-images.githubusercontent.com/64491311/91365496-4760e380-e7cf-11ea-8b53-4214b6659153.png)
 
-The diagram displayed above shows the architecture developed to set up the ELK server and monitor internal webservers (1,2) on DVWA web page (the D*mn Vulnerable Web Application)., those web servers are communicated to a load balancer through SSH communication protocol, while the load balancer is communicated to the web using HTTP. By doing that the PCs 1&2 are kept in the private network and the load balancer is the only one exposed on the public network.
+The diagram displayed above shows the architecture developed to set up the ELK server and monitor internal webservers (1,2) on DVWA web page (the D*mn Vulnerable Web Application). Those web servers are communicated to a load balancer through SSH communication protocol, while the load balancer is communicated to the web using HTTP. By doing that the PCs 1&2 are kept in the private network and the load balancer is the only one exposed on the public network.
 
 The load balancer is protected by firewall rule which allows external traffic to the virtual network. for this project host PC is the only sourced allowed to access the load balancer. It is important to include a load balancer when using virtualization, as it can defend an organization by denial of service attacks.
 
