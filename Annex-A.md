@@ -31,6 +31,8 @@ Main data
 ![WEB12](https://user-images.githubusercontent.com/64491311/91500882-61afc580-e892-11ea-85d4-366969ca01f5.png)
 
 Networking, Inbound Port Rules
+To add Inbound rules, select Inbound rules.
 
+![Inbound port Rules](https://user-images.githubusercontent.com/64491311/91501277-498c7600-e893-11ea-898b-61c113dbd523.png)
 
 
