@@ -39,3 +39,15 @@ Availability set
 ![image](https://user-images.githubusercontent.com/64491311/91514926-fbd53500-e8b5-11ea-99af-e1c05dc7b656.png)
 
 ## Vnet-ELK: Virtual Network Configuration for ELK Server:
+
+![vnet-elk](https://user-images.githubusercontent.com/64491311/91515711-c2052e00-e8b7-11ea-8868-dfaba30d7363.png)
+
+## ELK Server:
+![elk-server](https://user-images.githubusercontent.com/64491311/91515684-b0238b00-e8b7-11ea-8be9-5a5e48009276.png)
+
+ELK server inbound port rules
+![ELK-Server-firewall](https://user-images.githubusercontent.com/64491311/91515705-bd407a00-e8b7-11ea-9b96-54ad13dcc513.png)
+
+
+Note: ELK Server and Web1&2 Machines should contain same existing public key.
+
