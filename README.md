@@ -42,4 +42,4 @@ Following table displays the general configuration of each machine.  (For safety
 | ELK Server     | ELK Information collector  | 10.1.0.4 / 52.252.XXX.XXX  | Linux      |External IP is used to enter to Kibana to set up Lifebeat and metricbeat and monitor results                                                                                                                                                                 |
 
 Annex-A Displays the configuration of each device on the network.
-[Annex-A](ANNEX-A.md)
+[Annex-A](/ANNEX-A.md)
