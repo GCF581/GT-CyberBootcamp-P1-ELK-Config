@@ -41,5 +41,6 @@ Following table displays the general configuration of each machine.  (For safety
 | WEB2           | Internal PC          | 10.0.0.5                   | Linux            |Internal PC used as container, it sends logs and syst performance to ELK       |
 | ELK Server     | ELK Information collector  | 10.1.0.4 / 52.252.XXX.XXX  | Linux      |External IP is used to enter to Kibana to set up Lifebeat and metricbeat and monitor results                                                                                                                                                                 |
 
-Annex-A Displays the configuration of each device on the network.
-[Annex-A](/ANNEX-A.md)
+Annex-A File Displays the configuration of each device on the network.
+
+
