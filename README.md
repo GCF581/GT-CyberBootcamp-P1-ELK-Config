@@ -37,10 +37,35 @@ Following table displays the general configuration of each machine.  (For safety
 | Name           | Function             |      IP Address            | Operating System |                             General Notes                                     |
 |--------------- |----------------------|----------------------------|------------------|-------------------------------------------------------------------------------|
 | Jump Box       | Gateway              | 52.188.XXX.XXX             | Linux            |It contains the connection to docker and deploy containers                     |
-| WEB1           | Internal PC          | 10.0.0.4                   | Linux            |Internal PC used as container, it sends logs and syst performance to ELK       |
-| WEB2           | Internal PC          | 10.0.0.5                   | Linux            |Internal PC used as container, it sends logs and syst performance to ELK       |
+| WEB1           | Internal PC          | 10.0.0.5                   | Linux            |Internal PC used as container, it sends logs and syst performance to ELK       |
+| WEB2           | Internal PC          | 10.0.0.6                   | Linux            |Internal PC used as container, it sends logs and syst performance to ELK       |
 | ELK Server     | ELK Information collector  | 10.1.0.4 / 52.252.XXX.XXX  | Linux      |External IP is used to enter to Kibana to set up Lifebeat and metricbeat and monitor results                                                                                                                                                                 |
 
 Annex-A File Displays the configuration of each device on the network.
+
+### Access Policies
+
+As it is mention and shown on the picture above, Web 1&2 PC's are not exposed to the public internet they belong to a private network (cyberVnet)
+
+Jumpbox and Elk server are the only machines that can be accessed from the Internet, this configuration is set on the virtual machine and inbound ports (Annex-A). 
+
+IP Address for Jump box = Host IP
+IP Address for ELK Server = 52.252.XXX.XXX (public address)
+
+
+| Name       | Publicly Accessible | Allowed IP Addresses       |
+|------------|---------------------|----------------------------|
+| Jump Box   | Yes                 | 10.0.0.5 10.0.0.6          |
+| Elk Server | Yes                 | 10.0.0.5 10.0.0.6 10.0.0.4 |
+|            |                     |                            |
+
+### Use of Playbooks and containers development
+
+Ansible was used to deploy the environment and configuration to each container. In that way, all the package installation was performed automatically. 
+The configuration and installation of the services of each container were performed by playbooks which are some kind of manifesto indicating software to be installed, ports to be used, etc.
+The advantages to use ansible to automate the deployment of the container applications are that it can be run in several machines at the same time, and also the playbook can be modified in case any other requirement is needed. 
+
+
+
 
 
