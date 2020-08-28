@@ -67,5 +67,6 @@ The advantages to use ansible to automate the deployment of the container applic
 
 
 
+![container image list](https://user-images.githubusercontent.com/64491311/91520225-c125c980-e8c2-11ea-86c5-80b21f3d3c53.png)
 
 
