@@ -18,7 +18,9 @@ Use Azure DNS
 Make sure to peer this network to ELK network
 ![CyberNet Peering](https://user-images.githubusercontent.com/64491311/91500234-16e17e00-e891-11ea-90b6-077b700634cd.png)
 
+## Firewall RedTeam-NSG:
 
+![Inbound port Rules](https://user-images.githubusercontent.com/64491311/91501277-498c7600-e893-11ea-898b-61c113dbd523.png)
 
 ## Jump box Machine configuration:
     
@@ -30,8 +32,10 @@ Make sure to peer this network to ELK network
 Main data
 ![WEB12](https://user-images.githubusercontent.com/64491311/91500882-61afc580-e892-11ea-85d4-366969ca01f5.png)
 
-Networking, Inbound Port Rules
-
-![Inbound port Rules](https://user-images.githubusercontent.com/64491311/91501277-498c7600-e893-11ea-898b-61c113dbd523.png)
 
 
+Availability set
+
+![image](https://user-images.githubusercontent.com/64491311/91514926-fbd53500-e8b5-11ea-99af-e1c05dc7b656.png)
+
+## Vnet-ELK: Virtual Network Configuration for ELK Server:
