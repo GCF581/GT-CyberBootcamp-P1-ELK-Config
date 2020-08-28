@@ -7,7 +7,7 @@ Internal PC's and servers were set up as containers, so this project explains as
 * Network diagram and topology Description
 * Machines Configuration
 * Access Policies
-* Use of Playbooks and containers development
+* Docker and and Ansible configuration
 * ELK Configuration
   - Beats in use
   - Machines being monitoring
