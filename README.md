@@ -69,15 +69,14 @@ The advantages to use ansible to automate the deployment of the container applic
 
 ![container image list](https://user-images.githubusercontent.com/64491311/91520225-c125c980-e8c2-11ea-86c5-80b21f3d3c53.png)
 
-![inside docker](https://user-images.githubusercontent.com/64491311/91520577-9d16b800-e8c3-11ea-9234-bca637be0581.png)
+![inside docker](https://user-images.githubusercontent.com/64491311/91522201-aace3c80-e8c7-11ea-864e-76b48fce59cd.png)
 
-![key](https://user-images.githubusercontent.com/64491311/91520891-760cb600-e8c4-11ea-8e08-25d6929e2ead.png)
+![key](https://user-images.githubusercontent.com/64491311/91522213-b28de100-e8c7-11ea-9e6f-2ac7d847d63b.png)
 
-![Hosts_webservers](https://user-images.githubusercontent.com/64491311/91521666-2fb85680-e8c6-11ea-9e10-2c990822a13c.png)
+![Hosts_webservers](https://user-images.githubusercontent.com/64491311/91522306-ecf77e00-e8c7-11ea-962c-649d8208b760.png)
 
-![hosts_ELK](https://user-images.githubusercontent.com/64491311/91521673-334bdd80-e8c6-11ea-9261-552e4ad007df.png)
+![hosts_ELK](https://user-images.githubusercontent.com/64491311/91522314-f254c880-e8c7-11ea-8dcc-2bad4a3054b1.png)
 
-
-
+![pingpong](https://user-images.githubusercontent.com/64491311/91522205-af92f080-e8c7-11ea-8741-5982fcec5559.png)
 
 
