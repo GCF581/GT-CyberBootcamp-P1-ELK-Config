@@ -107,4 +107,26 @@ following image displays when docker is accessed after attaching the selected im
 
 ![pingpong](https://user-images.githubusercontent.com/64491311/91522205-af92f080-e8c7-11ea-8741-5982fcec5559.png)
 
+### Elk configuration
+Playbook Install-elk.yml was used to deploy all packages and configurations needed to the ELK Server. (for code see Playbook Elk server)
+
+**ELK Playbook execute following steps:**
+* Sets the host where the playbook will run (ELK, configured on Ansible.cfg)
+* Sets the remote user which will access the ELK Server. (that user must be the same as the one set on the ansible.cfg.
+* Update the system
+* Installs python3-pip
+* Install Docker module 
+* Increases memory and sets the use of memory on the container (ELK-server)
+* Download the container to the Elk-server
+* Open ports 5601, 9200 and 5044 (which are used for the access of the kibana and the transmission of the logs to the server)
+
+**ELK server configuration steps:**
+
+* Run all the commands as the root user.
+* Prepare playbook **Install-elk.yml** (see code on Playbook Elk Server)
+* Deploy the container to ELK Server by running the playbook: `ansible-playbook install-elk.yml` (make sure to be on ansible directory where the playbook is located)
+
+The following picture displays the success of each step listed on the playbook. 
+As it is shown everything was done just on the ELK server machine with IP: 10.1.0.4
+
 ![ELK-Server-playOK](https://user-images.githubusercontent.com/64491311/91625357-b6c40800-e974-11ea-9d2d-aa2dcc2033b9.png)
