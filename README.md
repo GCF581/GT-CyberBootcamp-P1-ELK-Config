@@ -65,17 +65,45 @@ Ansible was used to deploy the environment and configuration to each container. 
 The configuration and installation of the services of each container were performed by playbooks which are some kind of manifesto indicating software to be installed, ports to be used, etc.
 The advantages to use ansible to automate the deployment of the container applications are that it can be run in several machines at the same time, and also the playbook can be modified in case any other requirement is needed. 
 
+**Docker installation steps:**
+* Access Jump Box with: `ssh [user]@[jump box Public IP]`
+* Change to root user:  `sudo su`
+* Install Docker.io:    `apt install docker.io`
+* Start docker service: `systemctl start docker`
+* Pull the container:   `docker pull [specific container]` (in this case cybersecurity/ansible)
+* Connect to docker:    `docker run -ti cybersecurity/ansible bash` 
+* Set inbound security _rule to the firewall RedTeam-NSG (see Annex-A, Rule1499 VNET22)_
+
+**Docker access steps:**
+* Pull existent images from docker: `docker images`
+* Review available images:          `docker container list -a`
+* Start one of the containers:      `docker start [container image]` (this case frosty_jang)
+* Attach the image to the container: `docker attach frosty_jang`
 
 
-![container image list](https://user-images.githubusercontent.com/64491311/91520225-c125c980-e8c2-11ea-86c5-80b21f3d3c53.png)
+Ansible configuration steps.
+Create new public keys for Elk server, web1&2: ssh-keygen (save it on .ssh/id_rsa.pub)
+Copy the key from id_rsa.pub to the Elk server, web 1&2 (user must be the same)
 
-![inside docker](https://user-images.githubusercontent.com/64491311/91522201-aace3c80-e8c7-11ea-864e-76b48fce59cd.png)
+Config ansible files: nano /etc/ansible/hosts
+Uncomment [webservers] and add: <web1 IP> ansible_python_interpreter=/usr/bin/python3 (do the same but for web2)
+Add [ELK]
+Add <ELK Server IP> ansible_python_interpreter=/usr/bin/python3
 
-![key](https://user-images.githubusercontent.com/64491311/91522213-b28de100-e8c7-11ea-9e6f-2ac7d847d63b.png)
+Open ansible config: nano /etc/ansible/ansible.cfg
+Uncomment remote user: remote user = <ELK Server, web1&2 user>
+Check communication with the three computers: ansible -m ping all
 
-![Hosts_webservers](https://user-images.githubusercontent.com/64491311/91522306-ecf77e00-e8c7-11ea-962c-649d8208b760.png)
 
-![hosts_ELK](https://user-images.githubusercontent.com/64491311/91522314-f254c880-e8c7-11ea-8dcc-2bad4a3054b1.png)
+ ![container image list](https://user-images.githubusercontent.com/64491311/91520225-c125c980-e8c2-11ea-86c5-80b21f3d3c53.png)
+
+ ![inside docker](https://user-images.githubusercontent.com/64491311/91522201-aace3c80-e8c7-11ea-864e-76b48fce59cd.png)
+
+ ![key](https://user-images.githubusercontent.com/64491311/91522213-b28de100-e8c7-11ea-9e6f-2ac7d847d63b.png)
+
+ ![Hosts_webservers](https://user-images.githubusercontent.com/64491311/91522306-ecf77e00-e8c7-11ea-962c-649d8208b760.png)
+
+ ![hosts_ELK](https://user-images.githubusercontent.com/64491311/91522314-f254c880-e8c7-11ea-8dcc-2bad4a3054b1.png)
 
 ![pingpong](https://user-images.githubusercontent.com/64491311/91522205-af92f080-e8c7-11ea-8741-5982fcec5559.png)
 
