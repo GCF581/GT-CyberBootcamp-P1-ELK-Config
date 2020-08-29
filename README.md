@@ -87,7 +87,7 @@ following image displays when docker is accessed after attaching the selected im
 
 **Ansible configuration steps:**
 * Create new public keys for Elk server, web1&2: `ssh-keygen` (save it on .ssh/id_rsa.pub)
-* Copy the key from **id_rsa.pub** to the Elk server, web 1&2 (user must be the same)
+* Copy the key from **id_rsa.pub** to the Elk server, web 1&2 on the Virtual machines. (user must be the same)
 
 ![key](https://user-images.githubusercontent.com/64491311/91522213-b28de100-e8c7-11ea-9e6f-2ac7d847d63b.png)
 
