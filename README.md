@@ -107,4 +107,4 @@ following image displays when docker is accessed after attaching the selected im
 
 ![pingpong](https://user-images.githubusercontent.com/64491311/91522205-af92f080-e8c7-11ea-8741-5982fcec5559.png)
 
-
+![ELK-Server-playOK](https://user-images.githubusercontent.com/64491311/91625357-b6c40800-e974-11ea-9d2d-aa2dcc2033b9.png)
