@@ -131,7 +131,42 @@ As it is shown everything was done just on the ELK server machine with IP: 10.1.
 
 ![ELK-Server-playOK](https://user-images.githubusercontent.com/64491311/91625357-b6c40800-e974-11ea-9d2d-aa2dcc2033b9.png)
 
+**Beats installation:**
+Filebeat and Metricbeat playbooks are prepared to deploy their configuration on web1&2.
+But first the configuration files for filebeats and metricbeats are installed on the ELK server.
+The configuration files of the beats are on kibana and it is accessed by using the ELK-Server Public IP:  http://[ELK-Server IP]:5601/app/kibana. 
+The file to install the image for filebeat refer to: logs/system logs/ DEB
+The file to install the image for metricbeat refer to metrics/system metrics/ DEB
 
+Filebeat-config and metricbeat-configuration serve to set up the modules on the PC’S to be monitoring, to do that is necessary to enable the following features:
+
+* Enable the kibana module as it is shown on the picture below.
 ![filebeat-kibanamodule](https://user-images.githubusercontent.com/64491311/91669764-98314e80-eae5-11ea-90c8-b16ce921c432.png)
+
+* At elastic search output set the host [10.1.0.4:9200] (ELK server private IP: Port 9200, which allows the traffic of the logs)
 ![filebeat-elasticsearch](https://user-images.githubusercontent.com/64491311/91669765-98c9e500-eae5-11ea-88ca-817b07871043.png)
+
+* Setup kibana  as host 10.1.0.4:5601 (ELL Server private IP:Port5601 which allows the traffic to kibana of the elk server
 ![filebeat-kibana5601](https://user-images.githubusercontent.com/64491311/91669766-98c9e500-eae5-11ea-8153-a8bcc028f6b9.png)
+
+
+**Filebeat playbook (filebeat-playbook.yml)  includes:**
+Loading configuration on webservers (web1&2)
+Loading and installing files for Filebeat Configuration
+Configuring the filebeat modules
+Set up of the filebeat.
+
+
+**Metricbeat playbook (metricbeat-playbook.yml) includes:**
+
+Loading configuration on webservers (web1&2)
+Loading and installing files for Filebeat Configuration
+Configures and enable modules for metric beat
+Set up and start metric beat service
+
+
+
+
+
+
+
