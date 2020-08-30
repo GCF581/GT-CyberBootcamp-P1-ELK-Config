@@ -123,7 +123,7 @@ Playbook Install-elk.yml was used to deploy all packages and configurations need
 **ELK server configuration steps:**
 
 * Run all the commands as the root user.
-* Prepare playbook **Install-elk.yml** (see code on Playbook Elk Server)
+* Prepare playbook **Install-elk.yml** (see code on Playbook: install-elk.yml)
 * Deploy the container to ELK Server by running the playbook: `ansible-playbook install-elk.yml` (make sure to be on ansible directory where the playbook is located)
 
 The following picture displays the success of each step listed on the playbook. 
@@ -155,14 +155,14 @@ Filebeat-config and metricbeat-configuration serve to set up the modules on the 
 ![filebeat-kibana5601](https://user-images.githubusercontent.com/64491311/91669766-98c9e500-eae5-11ea-8153-a8bcc028f6b9.png)
 
 
-**Filebeat playbook (filebeat-playbook.yml)  includes:**
+**Filebeat playbook (filebeat-playbook.yml)  includes:** (for playbook code see playbook: filebeat-playbook.yml)
 * Loading configuration on webservers (web1&2) IP Address: 10.0.0.5 (web1), 10.0.0.6 (web2)
 * Loading and installing files for Filebeat Configuration
 * Configuring the filebeat modules
 * Set up of the filebeat.
 
 
-**Metricbeat playbook (metricbeat-playbook.yml) includes:**
+**Metricbeat playbook (metricbeat-playbook.yml) includes:** (for playbook code see playbook: metricbeat-playbook.yml)
 * Loading configuration on webservers (web1&2) IP Address: 10.0.0.5 (web1), 10.0.0.6 (web2)
 * Loading and installing files for Filebeat Configuration
 * Configures and enable modules for metric beat
