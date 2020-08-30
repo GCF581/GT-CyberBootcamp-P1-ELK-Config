@@ -163,12 +163,14 @@ Filebeat-config and metricbeat-configuration serve to set up the modules on the 
 
 
 **Metricbeat playbook (metricbeat-playbook.yml) includes:**
-
 * Loading configuration on webservers (web1&2)
 * Loading and installing files for Filebeat Configuration
 * Configures and enable modules for metric beat
 * Set up and start metric beat service
 
+After running filebeat and metric beats the following screen is dsiplayed indicated the succes of each step of the playbooks. 
+ansible-playbook filebeat-playbook.yml  
+ansible-playbook metricbeat-playbook.yml.
 
 
 
