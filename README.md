@@ -156,14 +156,14 @@ Filebeat-config and metricbeat-configuration serve to set up the modules on the 
 
 
 **Filebeat playbook (filebeat-playbook.yml)  includes:**
-* Loading configuration on webservers (web1&2)
+* Loading configuration on webservers (web1&2) IP Address: 10.0.0.5 (web1), 10.0.0.6 (web2)
 * Loading and installing files for Filebeat Configuration
 * Configuring the filebeat modules
 * Set up of the filebeat.
 
 
 **Metricbeat playbook (metricbeat-playbook.yml) includes:**
-* Loading configuration on webservers (web1&2)
+* Loading configuration on webservers (web1&2) IP Address: 10.0.0.5 (web1), 10.0.0.6 (web2)
 * Loading and installing files for Filebeat Configuration
 * Configures and enable modules for metric beat
 * Set up and start metric beat service
