@@ -4,6 +4,7 @@ The project explains how to set up an Elk server, file beats, and micro beats fo
 Internal PC's and servers were set up as containers, so this project explains as well the use of docker and ansible-playbooks.
 
 ## Project contents
+* Bunshie photos
 * Network diagram and topology Description
 * Machines Configuration
 * Access Policies
