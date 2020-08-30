@@ -135,8 +135,13 @@ As it is shown everything was done just on the ELK server machine with IP: 10.1.
 Filebeat and Metricbeat playbooks are prepared to deploy their configuration on web1&2.
 But first the configuration files for filebeats and metricbeats are installed on the ELK server.
 The configuration files of the beats are on kibana and it is accessed by using the ELK-Server Public IP:  http://[ELK-Server IP]:5601/app/kibana. 
+
 The file to install the image for filebeat refer to: logs/system logs/ DEB
+![filebeat-systlogsfile](https://user-images.githubusercontent.com/64491311/91670153-e72cb300-eae8-11ea-930f-a00a18964211.png)
+
 The file to install the image for metricbeat refer to metrics/system metrics/ DEB
+![metricbeat-metricsfile](https://user-images.githubusercontent.com/64491311/91670154-e7c54980-eae8-11ea-9ee1-7afbd5698c59.png)
+
 
 Filebeat-config and metricbeat-configuration serve to set up the modules on the PC’S to be monitoring, to do that is necessary to enable the following features:
 
@@ -163,6 +168,7 @@ Loading configuration on webservers (web1&2)
 Loading and installing files for Filebeat Configuration
 Configures and enable modules for metric beat
 Set up and start metric beat service
+
 
 
 
