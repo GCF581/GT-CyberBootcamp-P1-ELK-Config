@@ -168,11 +168,11 @@ Filebeat-config and metricbeat-configuration serve to set up the modules on the 
 * Configures and enable modules for metric beat
 * Set up and start metric beat service
 
-After running filebeat and metric beats the following screen is dsiplayed indicated the succes of each step of the playbooks. 
+After running filebeat and metric beats the following screen is dsiplayed indicated the succes of each step of the playbooks, on the kibana side it dsiplays that it is receiving data from that module
 ansible-playbook filebeat-playbook.yml  
 ansible-playbook metricbeat-playbook.yml.
 
-
+![filebeat-datareceiving](https://user-images.githubusercontent.com/64491311/91670658-6e7c2580-eaed-11ea-8fce-952a28af4fdc.png)
 
 
 
