@@ -130,3 +130,8 @@ The following picture displays the success of each step listed on the playbook.
 As it is shown everything was done just on the ELK server machine with IP: 10.1.0.4
 
 ![ELK-Server-playOK](https://user-images.githubusercontent.com/64491311/91625357-b6c40800-e974-11ea-9d2d-aa2dcc2033b9.png)
+
+
+![filebeat-kibanamodule](https://user-images.githubusercontent.com/64491311/91669764-98314e80-eae5-11ea-90c8-b16ce921c432.png)
+![filebeat-elasticsearch](https://user-images.githubusercontent.com/64491311/91669765-98c9e500-eae5-11ea-88ca-817b07871043.png)
+![filebeat-kibana5601](https://user-images.githubusercontent.com/64491311/91669766-98c9e500-eae5-11ea-8153-a8bcc028f6b9.png)
